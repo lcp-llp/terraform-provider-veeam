@@ -26,7 +26,9 @@ func Provider() *schema.Provider {
 				Description: "The endpoint of the Veeam server.",
 			},
 		},
-		ResourcesMap: map[string]*schema.Resource{},
+		ResourcesMap: map[string]*schema.Resource{
+			"veeam_job": resourceJob(),
+		},
 		DataSourcesMap: map[string]*schema.Resource{
 			"veeam_job": dataSourceJob(),
 		},
