@@ -132,9 +132,10 @@ func resourceJob() *schema.Resource {
 				Elem: &schema.Resource{
 					Schema: map[string]*schema.Schema{
 						"run_automatically": {
-							Type:     schema.TypeBool,
-							Required: true,
-							Default:  false,
+							Type:        schema.TypeBool,
+							Optional:    true,
+							Default:     false,
+							Description: "Whether the job should run automatically.",
 						},
 						"daily": {
 							Type:     schema.TypeMap,
