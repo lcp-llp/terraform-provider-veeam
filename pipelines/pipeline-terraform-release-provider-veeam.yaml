@@ -17,6 +17,8 @@ variables:
     value: 'veeam'
   - name: gnupgVersion
     value: '2.4.3'
+  - name: repoName
+    value: 'lcp-llp/terraform-provider-veeam'
 
 jobs:
   - job: build_provider
